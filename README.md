@@ -6,17 +6,25 @@
 </head>
 
 <style>
-body {margin: o;}
+html, body {margin: 0;
+height: 100%;}
+
 #nav {display: flex;
 justify-content: flex-end;
 margin-top: 15px;}
+
 #nav a {margin-right: 20px;}
+
 #nav a.topimage {width: 20px;
 height: 20px;
 background: darkorange;
 border-radius: 50px;}
 
-#middle {margin-top: 300px;}
+#middle {flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
 
 #logo{text-align: center;}
 
@@ -39,6 +47,14 @@ padding: 5px 10px;
 cursor: pointer;
 border-radius: 3px;
 background: rgb(231,231,231);}
+
+#links {margin-top: 20px;
+text-align: center}
+
+body {display: flex;
+flex-direction: column;}
+
+#footer {}
 </style>
 
 <body>
@@ -67,6 +83,21 @@ Google meklēšana
 <div class="button">
 Es ticu veiksmei!
 </div>
+</div>
+
+<div id="links">
+Google piedāvājums:
+<a href="">English</a>
+<a href="">lietuvių</a>
+<a href="">русский</a>
+</div>
+</div>
+
+
+
+<div id="footer">
+<div id="footer-contetnt">
+Latvija
 </div>
 </div>
 </body>
